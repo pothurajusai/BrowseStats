@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-csp="">
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SitesStats</title>
+
+	<!--Scripts -->
+	<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="js/vendor/d3.min.js"></script>
+	<script type="text/javascript" src="js/d3/nv.d3.js"></script>
+	<script type="text/javascript" src="js/d3/angular-nvd3.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<!--End Scripts -->
+
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="css/chartist.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--End Stylesheets-->
+
+</head>
+<body>
+	<div class="container-fluid" ng-controller="MainController">
+				<h1>{{date | date: 'hh mm ss'}}</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Browsing Stats</h2>
+					<div class="panel panel-default">
+						<table class="table">
+							<tbody>
+								<tr ng-repeat="stat in stats | limitTo:5">
+									<td class="col-md-2">{{ stat.title }}</td>
+									<td class="col-md-2">{{ stat.visitCount}} times</td>
+								</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-8">
+				 <nvd3 options="Pieoptions" data="PieData"></nvd3>
+			</div>
+		</div>
+</div>
+
+</body>
+</html>

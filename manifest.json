@@ -1,0 +1,12 @@
+{
+    "name": "SitesStats",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Displays statistics about your browsing history!",
+    "permissions" : ["history"],
+    "background" : {"scripts" : ["js/vendor/angular.min.js"]},
+    "content_security_policy" : "script-src 'self'; object-src 'self'",
+    "chrome_url_overrides" : {
+    	"newtab" : "tab.html"
+    }
+}

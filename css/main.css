@@ -1,0 +1,23 @@
+body{
+  background: #ad403e;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 105px;
+  text-align: center;
+}
+
+ h2 {
+   color: white;
+ }
+
+svg text {
+  fill: white;
+  font-size: 15px;
+}
+
+.nv-pieLabels text {
+  fill: white !important;
+}
