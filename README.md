@@ -1,4 +1,4 @@
-# SitesStats (BETA)
+# BrowseStats (BETA)
 
 Google chrome plugin that displays statistics about your most visited websites!
 
@@ -11,4 +11,3 @@ Google chrome plugin that displays statistics about your most visited websites!
     Click Load unpacked extension… to pop up a file-selection dialog.
 
     Navigate to the directory in which your extension files live, and select it.
-
